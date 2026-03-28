@@ -18,6 +18,21 @@ const Contactme = () => {
     console.log(form);
   };
 
+  const handleSendEmail=async(e)=>{
+    e.preventDefault();
+    const data=await fetch('/api/server', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+            name:form.name,
+            email:form.email,
+            message:form.message,
+        }),
+    });
+    const res = await data.json();
+    console.log(res);
+  }
+
   return (
     <div>
       Contactme
