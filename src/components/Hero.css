@@ -4,12 +4,11 @@
   color: white;
 }
 
-.secondary-text {
-  background: linear-gradient(0.25turn, #00ff9d, #ebf8e1, #cf5cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.normal-text{
+  font-size: 30px;
+  color: black;
+  justify-content:center;
 }
-
 
 .btn {
     width:191;
@@ -26,4 +25,13 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.text-container{
+  height: 480px;
+  width: 60%;
+  background-color: white;
+  border-radius: 30px;
+  justify-content: center;
+  
 }

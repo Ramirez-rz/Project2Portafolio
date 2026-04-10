@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
   return (
-    <>
+    <div class="">
       <div className="container-navbar">
         <div className="links">
           <p><Link to="/home">Home</Link></p>
@@ -13,7 +13,7 @@ const Navbar = ({ children }) => {
         </div>
       </div>
       {children}
-    </>
+    </div>
   );
 };
 

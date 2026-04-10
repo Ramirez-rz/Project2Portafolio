@@ -1,5 +1,22 @@
 body{
-  background-color: #1D0C26;
+  background-color: #858383;
   color:white;
   font-family: arial;
+  
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  height: 50px; 
+  width: 100%;
+  background: #ffffff;
+  color:black;
+  border-radius: 30px;
+} 
