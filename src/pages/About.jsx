@@ -16,12 +16,9 @@ const About = () => {
             <div class="mega-container">
                    <div class="text-container normal-text">
                     <p>
-                        I am a Software Engineering student with a strong interest in front-end development and the overall process of building technological projects. I am passionate about designing interfaces that are visually appealing, functional, and focused on user experience, paying close attention to both aesthetics and usability.
+                        Andrés Ramírez Ruiz, 20 years old, currently studying Ingeniería en Tecnologías Computacionales at el Tecnológico de Monterrey. I’ve been into video games and technology since I was young, which sparked my curiosity for how things are built and how they work. I’m currently Ascendant in Valorant and play as a left winger in football, so I enjoy competition and constantly improving. I also like socializing, meeting new people, and being part of collaborative environments where ideas can grow. I’m a big fan of Cristiano Ronaldo and his mindset, and I enjoy listening to artists like The Weeknd, Bad Bunny, Billie Eilish, Mora, Rauw Alejandro, and Don Toliver. I’m naturally drawn to organizing ideas, planning projects, and designing solutions that are clear, functional, and well structured.
                     </p> 
-                    
-                    <p>
-                        In addition, I genuinely enjoy the full project development cycle, from planning and organization to technical documentation. I believe that clear structure, well-defined processes, and solid documentation are essential for creating efficient and scalable solutions. I strive to combine creativity with logic, contributing both to the visual side and to the organization and management of projects.
-                    </p>
+            
                 </div>
                 <div class="img-container">
                     <img src={miles} />
