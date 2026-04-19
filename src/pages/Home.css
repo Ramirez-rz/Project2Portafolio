@@ -1,5 +1,13 @@
-
-
+.skill{
+    font-size: 40px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  flex-direction: row; 
+}
 
 
 .texto{
@@ -8,37 +16,45 @@
 }
 
 .container {
-    padding: "40px";
-    height: 40px;
-    width: 50%;
-    text-align: "center";
-    font-family: "Arial, sans-serif";
+    padding: 40px;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 10px; 
+    flex-direction: row;  
+}
+
+.left-container{
+    width: 70%;
 }
 
 .title {
-    font-size: "2.5rem";
-    margin-bottom: "10px";
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    font-size: "1.2rem";
-    margin-bottom: "30px";
-    color: "#555";
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
 }
 
 .cardContainer {
-    display: "flex";
-    justify-content: "center";
-    gap: "20px";
-    flex-wrap: "wrap";
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card{
-    background: "#f4f4f4";
-    padding: "20px";
-    border-Radius: "10px";
-    width: "250px";
-    box-Shadow: "0 4px 8px rgba(0,0,0,0.1)";
+    background: gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .main-text {
@@ -63,7 +79,7 @@
 .main-container{
   height: 80px;
   width: 100%;
-  background-color: white;
+  background-color: gray;
   border-radius: 30px;
   justify-content: center;
 }
@@ -78,7 +94,7 @@
     width:191;
     height: 56 px;
     border: none;
-    background-color: #00ff9d;
+    background-color: black;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -98,14 +114,10 @@
   justify-content: center;
 }
 
-.img-container{
+.second-container{
     height: 600px;
-    width: 60%;
+    width: 30%;
     border-radius: 30px;
     justify-content: center; 
+    background-color: lightgray;
 }
-
-
-
-
-

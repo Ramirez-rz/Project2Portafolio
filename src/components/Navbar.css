@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
 }
 
 .links {
@@ -11,6 +14,5 @@
     align-items: center;
     cursor: pointer;
     gap: 20px;
-
-
 }
+

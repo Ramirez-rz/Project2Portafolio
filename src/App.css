@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+  background-color: gray;
   color:white;
   font-family: arial;
   
@@ -11,12 +11,4 @@ html {
 
 * {
   box-sizing: border-box;
-}
-
-.container{
-  height: 50px; 
-  width: 100%;
-  background: #ffffff;
-  color:black;
-  border-radius: 30px;
 } 
