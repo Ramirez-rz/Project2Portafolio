@@ -1,7 +1,7 @@
 .main-text {
   font-size: 40px;
   font-weight: bold;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center; 
   align-items: center; 
@@ -18,16 +18,16 @@
 }
 
 .main-container{
-  height: 80px;
+  height: 90px;
   width: 100%;
-  background-color: #E8E8E8;
+  background-color: gray;
   border-radius: 30px;
   justify-content: center;
 }
 
 .normal-text{
   font-size: 30px;
-  color: black;
+  color: #555;
   justify-content:center;
 }
 

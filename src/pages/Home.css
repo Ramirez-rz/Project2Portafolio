@@ -57,6 +57,15 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.main-card{
+    background: gray;
+    padding: 20px;
+    border-radius: 10px;
+    height: 260px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 .main-text {
   font-size: 40px;
   font-weight: bold;
@@ -115,7 +124,7 @@
 }
 
 .second-container{
-    height: 600px;
+    height: 300px;
     width: 30%;
     border-radius: 30px;
     justify-content: center; 

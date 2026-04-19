@@ -8,10 +8,11 @@ const About = () => {
     return (
         <>
             <div class="main-container">
-               <h1 class="main-text">About Me</h1> 
-                <p>
+               <h1 class="main-text">About Me
+                </h1> 
+                <h3>
                     <Link to ="/">Go Back</Link>
-                </p> 
+                </h3> 
             </div>
             <div class="mega-container">
                    <div class="text-container normal-text">
