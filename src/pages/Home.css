@@ -46,6 +46,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    height: 2000px;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -54,7 +56,16 @@
     padding: 20px;
     border-radius: 10px;
     width: 250px;
+    height: 2000px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card2{
+    background: gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 2050px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
 .main-card{
@@ -124,9 +135,9 @@
 }
 
 .second-container{
-    height: 300px;
-    width: 30%;
+    height: 700px;
+    width: 50%;
     border-radius: 30px;
     justify-content: center; 
-    background-color: lightgray;
+    background-color: gray;
 }

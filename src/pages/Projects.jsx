@@ -6,8 +6,16 @@ const Projects = () => {
             <div class="main-container">
                <h1 class="main-text">Projects</h1> 
                 <p>
-                    <Link to ="/">Go Back</Link>
+                    <div className="cardbutton">
+                        <Link to ="/">Go Back</Link>
+                    </div>
                 </p> 
+            </div>
+            <div className="cardContainer">
+                <div className="card">
+
+                     
+                </div>
             </div>
         </>
     );
