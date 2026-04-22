@@ -75,7 +75,7 @@ function Home() {
                 Thinking. </p>
                 <p className="skills"> <b>Languages:</b> Spanish (Native) / English (B2). </p> 
                 <div className="w-[100%] h-[300px] bg-gray">
-                  <img className="rounded-xl" src={skills} />
+                  <img className="w-[100%] h-[300px] rounded-xl" src={skills} />
                 </div>
           </div>
           
