@@ -2,6 +2,9 @@ import React from "react";
 import "./Home.css";
 import miles from "./Miles.webp";
 import skills from "./skills.jpg";
+import P1 from "./P1.png";
+import P3 from "./P3.png";
+import P5 from "./P5.png";
 
 function Home() {
   return (
@@ -19,6 +22,39 @@ function Home() {
           <div className="card2">
             <h3>Projects</h3>
             <p>Check out some of the work I've done:</p>
+            <div className="w-[800px] h-[200px] flex flex-nowrap gap-3">
+                <div className="w-[200px] h-[200px] bg-white rounded-xl">
+                  <a
+                    href="https://github.com/Ramirez-rz/Proyecto1Calculadora" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img className="w-[100%] h-[100%] rounded-xl cursor-pointer" src={P1} />
+                  </a>
+                </div>
+                <div className="w-[200px] h-[200px] bg-white rounded-xl">
+                  <a
+                    href="https://github.com/Ramirez-rz/Proyecto3" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img className="w-[100%] h-[100%] rounded-xl cursor-pointer" src={P3} />
+                  </a> 
+                </div>
+                <div className="w-[200px] h-[200px] bg-white rounded-xl">
+                  <a
+                    href="https://chatify-ui-chi.vercel.app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img className="w-[100%] h-[100%] rounded-xl cursor-pointer" src={P5} />
+                  </a>
+                </div>
+                <div className="w-[200px] h-[200px] rounded-xl">
+                    
+                </div>
+            </div>
+            
           </div>
         </div>
 
