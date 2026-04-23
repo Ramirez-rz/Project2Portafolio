@@ -1,7 +1,8 @@
-
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Contactme = () => {
+  const apiUrl = import.meta.env.VITE_API_URL ?? '';
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -15,59 +16,104 @@ const Contactme = () => {
       ...prev,
       [name]: value,
     }));
-    console.log(form);
   };
 
-  const handleSendEmail=async(e)=>{
+  const handleSendEmail = async (e) => {
     e.preventDefault();
-    const data=await fetch('/api/server', {
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({
-            name:form.name,
-            email:form.email,
-            message:form.message,
+
+    try {
+      const response = await fetch(`${apiUrl}/api/server`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
         }),
-    });
-    const res = await data.json();
-    console.log(res);
-  }
+      });
+
+      const res = await response.json();
+      console.log(res);
+
+      if (response.ok) {
+        alert('Email sent successfully');
+        setForm({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        alert(res.error || 'Error sending email');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Server error');
+    }
+  };
 
   return (
     <div>
-      Contact Me
-      <div>
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <input
-            name="name"
-            type="text"
-            value={form.name}
-            onChange={handleOnchange}
-          />
-          <input
-            name="email"
-            type="email"
-            value={form.email}
-            onChange={handleOnchange}
-          />
-        </div>
-        <div style={{ paddingTop: '20px' }}>
-          <textarea
-            name="message"
-            type="message"
-            rows="10"
-            cols="50"
-            value={form.message}
-            onChange={handleOnchange}
-          />
-        </div>
-        <button style={{ width: '140px', height: '40px' }}>Contact Me</button>
+      <div className='cardbutton'>
+        <Link to="/">Go Back</Link>
       </div>
-      <button>Go Back</button>
+
+      <form onSubmit={handleSendEmail}>
+        <div className='w-[100%] h-[100%]'>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <input
+              className='bg-white rounded-xl text-black'
+              name="name"
+              type="text"
+              placeholder="Name"
+              value={form.name}
+              onChange={handleOnchange}
+            />
+            <input
+              className='bg-white rounded-xl text-black'
+              name="email"
+              type="email"
+              placeholder="Email"
+              value={form.email}
+              onChange={handleOnchange}
+            />
+          </div>
+
+          <div style={{ paddingTop: '20px' }}>
+            <input
+              className='bg-white rounded-xl text-black'
+              name="subject"
+              type="text"
+              placeholder="Subject"
+              value={form.subject}
+              onChange={handleOnchange}
+            />
+          </div>
+
+          <div style={{ paddingTop: '20px' }}>
+            <textarea
+              className='bg-white rounded-xl text-black'
+              name="message"
+              rows="10"
+              cols="50"
+              placeholder="Message"
+              value={form.message}
+              onChange={handleOnchange}
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="cardbutton"
+            style={{ width: '140px', height: '40px' }}
+          >
+            Contact Me
+          </button>
+        </div>
+      </form>
     </div>
   );
 };
 
 export default Contactme;
-
-

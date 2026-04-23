@@ -72,7 +72,7 @@ const Projects = () => {
                                         CHAT APP
                                     </p>
                                     <p style={{ fontSize: "16px", color: "#555", lineHeight: "1.5" }}>
-                                        A real-time messaging app that allows users to send and receive messages in a simple and interactive chat interface.
+                                        A real time messaging app that allows users to send and receive messages in a simple and interactive chat interface.
                                     </p>
                                 </div>
                             </div>
